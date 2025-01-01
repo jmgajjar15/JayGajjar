@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Gajjar | About Me</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../cdn.jsdelivr.net/gh/iconoir-icons/iconoir%40main/css/iconoir.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .skills-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .skill {
+            margin-bottom: 25px;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .skill-percentage {
+            color: #ffffff;
+        }
+
+        .progress-bar {
+            background: #777474;
+            height: 8px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress {
+            position: absolute;
+            height: 100%;
+            animation: load 2s ease-in-out;
+        }
+
+        .manual-tester .progress {
+            width: 98%;
+            background: linear-gradient(to right, #ff6b6b, #ff8787);
+        }
+
+        .html .progress {
+            width: 95%;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+        }
+
+        .css .progress {
+            width: 90%;
+            background: linear-gradient(to right, #43e97b, #38f9d7);
+        }
+
+        .tailwind .progress {
+            width: 80%;
+            background: linear-gradient(to right, #fa709a, #fee140);
+        }
+
+        .javascript .progress {
+            width: 60%;
+            background: linear-gradient(to right, #30cfd0, #330867);
+        }
+
+        .java .progress {
+            width: 45%;
+            background: linear-gradient(to right, #a18cd1, #fbc2eb);
+        }
+
+        @keyframes load {
+            0% {
+                width: 0;
+            }
+        }
+
+        
+
+        .title {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 40px;
+            
+        }
+
+        .languages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .language {
+            margin-bottom: 20px;
+        }
+
+        .circle-wrap {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 15px;
+            position: relative;
+        }
+
+        .circle {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        circle {
+            fill: none;
+            stroke-width: 3;
+            stroke-linecap: round;
+        }
+
+        .bg {
+            stroke: #666464;
+        }
+
+        .progress {
+            stroke: #ffffff;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 1s ease-in-out;
+        }
+
+        .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        .language-name {
+            color: #ffffff;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Individual progress animations */
+        .english .progress {
+            stroke-dashoffset: 22; /* (440 * (100 - 95) / 100) */
+        }
+
+        .hindi .progress {
+            stroke-dashoffset: 8.8; /* (440 * (100 - 98) / 100) */
+        }
+
+        .marathi .progress {
+            stroke-dashoffset: 132; /* (440 * (100 - 70) / 100) */
+        }
+
+        .gujarati .progress {
+            stroke-dashoffset: 35.2; /* (440 * (100 - 92) / 100) */
+        }   
+
+
+        .title {
+            font-size: 24px;
+            color: #ffffff;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        
+
+        .services-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: #b2b1b1;
+            font-size: 16px;
+        }
+
+        .service-item::before {
+            content: "▶";
+            font-size: 10px;
+            margin-right: 15px;
+            color: #ffffff;
+        }
+
+        /* Hover effect */
+        .service-item:hover {
+            color: #f2eaea;
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover::before {
+            color: #ffffff;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <main class="main-aboutpage">
+
+        <!-- Header -->
+        <header class="header-area">
+            <div class="container">
+                <div class="gx-row d-flex align-items-center justify-content-end">
+                    <!-- <a href="index.html" class="logo">
+                        <img src="assets/images/logo.svg" alt="Logo">
+                    </a> -->
+
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="about.html">About</a></li>
+                            <li><a href="works.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <a href="contact.html" class="theme-btn">Let's talk</a>
+                    </nav>
+
+                    <a href="contact.html" class="theme-btn">Let's talk</a>
+
+                    <div class="show-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        <section class="about-area">
+            <div class="container">
+                <div class="d-flex about-me-wrap align-items-start gap-24">
+                    <div data-aos="zoom-in">
+                        <div class="about-image-box shadow-box">
+                            <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                            <div class="image-inner">
+                                <img style="border: 7px solid white;" src="./Pics/dp2.jpg" alt="About Me">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-details" data-aos="zoom-in">
+                        <h1 class="section-heading" data-aos="fade-up"><img src="assets/images/star-2.png" alt="Star">
+                            Self-summary <img src="assets/images/star-2.png" alt="Star"></h1>
+                        <div class="about-details-inner shadow-box">
+                            <img src="assets/images/icon2.png" alt="Star">
+                            <h1>Jay Mukesh Gajjar</h1>
+                            <p>Hello there! My name is Jay Mukesh Gajjar. A passionate and dedicated Front-End Developer
+                                with a knack for crafting engaging, user-friendly, and visually appealing web
+                                interfaces. I specialize in turning innovative ideas into responsive and interactive
+                                digital experiences.
+                                <br>
+                                <br>
+                                And as a dedicated and detail-oriented Manual Tester, I bring my expertise in ensuring
+                                the quality and reliability of software applications across diverse industries. My
+                                proficiency lies in designing, executing, and documenting comprehensive test cases that
+                                uncover hidden bugs, improve user experience, and uphold product standards.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mt-24">
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-edc-exp about-experience shadow-box">
+                            <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                            <h3>EXPERIENCE</h3>
+
+                            <ul>
+                                <li>
+                                    <p class="date">September 2024 - running</p>
+                                    <h2>Valtara Web Development (Boisar)</h2>
+                                    <p class="type">Templetes Designer</p>
+                                </li>
+                                <li>
+                                    <p class="date">July 2024 - September 2024
+                                    </p>
+                                    <h2>Octanet Company (Palghar)</h2>
+                                    <p class="type">Frontend Developer</p>
+                                </li>
+                                <li>
+                                    <p class="date">June 2024 - Current</p>
+                                    <p class="type">Working as a</p>
+                                    <h2>Manual Tester</h2>
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-edc-exp about-education shadow-box">
+                            <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                            <h3>EDUCATION</h3>
+                            <ul>
+                                <li>
+                                    <p class="date">2021 - 2024</p>
+                                    <h2>SDSM Dandekar College</h2>
+                                    <p class="type">BSC Computer Science <br> CGPA - 9.18</p>
+                                </li>
+                                <li>
+                                    <p class="date">2019 - 2021</p>
+                                    <h2>SRK Vadkun College</h2>
+                                    <p class="type">Science (PCM) <br> Percentage - 83.00</p>
+                                </li>
+                                <li>
+                                    <p class="date">Passout - 2019</p>
+                                    <h2>St Mary's High School</h2>
+                                    <p class="type">Percentage - 80.00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div style="margin-top: 8%;" class="about-edc-exp about-education shadow-box">
+                            <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                            <h3>PROGRAMMING</h3>
+                            <ul>
+                                <li>
+                                    <div class="skills-container">
+                                        <div class="skill manual-tester">
+                                            <div class="skill-header">
+                                                <span class="skill-name">Manual Tester</span>
+                                                <span class="skill-percentage">98%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill html">
+                                            <div class="skill-header">
+                                                <span class="skill-name">HTML</span>
+                                                <span class="skill-percentage">95%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill css">
+                                            <div class="skill-header">
+                                                <span class="skill-name">CSS</span>
+                                                <span class="skill-percentage">90%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill tailwind">
+                                            <div class="skill-header">
+                                                <span class="skill-name">Tailwind CSS</span>
+                                                <span class="skill-percentage">80%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill javascript">
+                                            <div class="skill-header">
+                                                <span class="skill-name">Javascript</span>
+                                                <span class="skill-percentage">60%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill java">
+                                            <div class="skill-header">
+                                                <span class="skill-name">Java</span>
+                                                <span class="skill-percentage">45%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div style="margin-top: 8%;" class="about-edc-exp about-education shadow-box">
+                            <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                            <div class="container">
+                                <h3 class="title">LANGUAGE</h3>
+                                <div class="languages">
+                                    <div class="language">
+                                        <div class="circle-wrap english">
+                                            <div class="circle">
+                                                <svg>
+                                                    <circle class="bg" cx="75" cy="75" r="70"/>
+                                                    <circle class="progress" cx="75" cy="75" r="70"/>
+                                                </svg>
+                                                <div class="percentage">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="language-name">English</div>
+                                    </div>
+                        
+                                    <div class="language">
+                                        <div class="circle-wrap hindi">
+                                            <div class="circle">
+                                                <svg>
+                                                    <circle class="bg" cx="75" cy="75" r="70"/>
+                                                    <circle class="progress" cx="75" cy="75" r="70"/>
+                                                </svg>
+                                                <div class="percentage">98%</div>
+                                            </div>
+                                        </div>
+                                        <div class="language-name">Hindi</div>
+                                    </div>
+                        
+                                    <div class="language">
+                                        <div class="circle-wrap marathi">
+                                            <div class="circle">
+                                                <svg>
+                                                    <circle class="bg" cx="75" cy="75" r="70"/>
+                                                    <circle class="progress" cx="75" cy="75" r="70"/>
+                                                </svg>
+                                                <div class="percentage">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="language-name">Marathi</div>
+                                    </div>
+                        
+                                    <div class="language">
+                                        <div class="circle-wrap gujarati">
+                                            <div class="circle">
+                                                <svg>
+                                                    <circle class="bg" cx="75" cy="75" r="70"/>
+                                                    <circle class="progress" cx="75" cy="75" r="70"/>
+                                                </svg>
+                                                <div class="percentage">92%</div>
+                                            </div>
+                                        </div>
+                                        <div class="language-name">Gujarati</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div style="margin-top: 8%;" class="about-edc-exp about-education shadow-box">
+                            <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                            <div class="container">
+                                <h1 class="title">SERVICES</h1>
+                                <ul class="services-list">
+                                    <li class="service-item">Manual Tester</li>
+                                    <li class="service-item">HTML</li>
+                                    <li class="service-item">CSS</li>
+                                    <li class="service-item">Tailwind CSS</li>
+                                    <li class="service-item">Java Script</li>
+                                    <li class="service-item">Java(Basic)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-24">
+                    <div class="col-md-12">
+                        <div class="d-flex profile-contact-credentials-wrap gap-24">
+
+                            <div data-aos="zoom-in">
+                                <div class="about-profile-box info-box shadow-box h-full">
+                                    <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="inner-profile-icons shadow-box">
+                                        <a href="https://www.instagram.com/invites/contact/?igsh=wgzojatl513r&utm_content=46zra4o">
+                                            <img style="border-radius: 50%;" src="https://imgs.search.brave.com/ARgv5tpKLT8_mN2TiSAnJBZRWUzIGBQbmHBqriIFDko/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzM5Lzk4LzM2/LzM2MF9GXzUzOTk4/MzYyOV9TbjlKQ21w/YkFmSVVTWVF5bGtB/T2RwNFVtWUdLWTFp/Wi5qcGc" alt="Instagram">
+                                            <i class="iconoir-dribbble"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/jaygajjar21/">
+                                            <img style="border-radius: 50%; zoom: 40;" src="https://images.template.net/100611/linkedin-social-icon-clipart-pr1o8.jpg" alt="LinkedIn">
+                                            <i class="iconoir-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                            <h4>Connect with my</h4>
+                                            <h1>Profile</h1>
+                                        </div>
+
+                                        <a href="contact.html" class="about-btn">
+                                            <img src="assets/images/icon.svg" alt="Button">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="about-contact-box info-box shadow-box">
+                                    <a class="overlay-link" href="contact.html"></a>
+                                    <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <img src="assets/images/icon2.png" alt="Icon" class="star-icon">
+                                    <h1>Let's <br>work <span>together.</span></h1>
+                                    <a href="contact.html" class="about-btn">
+                                        <img src="assets/images/icon.svg" alt="Button">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" class="h-full">
+                                <div class="about-crenditials-box info-box shadow-box">
+                                    <a class="overlay-link" href="credentials.html"></a>
+                                    <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <img style="width: 350px;" src="./Pics/signature.png" alt="Sign">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                            <h4>more about me</h4>
+                                            <h1>Credentials</h1>
+                                            <h6 style="font-size: x-small; float: right;">(click here)</h6>
+                                        </div>
+
+                                        <a href="credentials.html" class="about-btn">
+                                            <img src="assets/images/icon.svg" alt="Button">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="works.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <p class="copyright">
+                        &copy; All rights reserved by <span>JMG15</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from wpriverthemes.com/landing/gridx-html/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Dec 2024 07:13:44 GMT -->
+
+</html>
